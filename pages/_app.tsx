@@ -15,6 +15,7 @@ import '../styles/transactions-detail.css'
 import '../styles/edit-profile.css'
 import '../styles/tambahlogbook.css'
 import '../styles/navbar-log-in.css'
+import '../styles/profile.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 
@@ -29,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.gstatic.com"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
 
         {/* AOS Animation */}

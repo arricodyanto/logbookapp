@@ -10,7 +10,7 @@ export default function Footer() {
                 <p className="fw-medium color-palette-1">Tambahkan<br/>
                     Logbook Anda</p>
             </div>
-            <Link href="/member/tambahlogbook">
+            <Link href="/user/logbook/tambah">
                 <a className="btn btn-get-started w-100 fw-medium text-xs text-center text-white rounded-pill"
                     role="button">Tambah</a>
             </Link>

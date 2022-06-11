@@ -1,11 +1,11 @@
-import OverviewContent from "../../components/organisms/OverviewContent";
+import DashboardContent from "../../components/organisms/DashboardContent";
 import SideBar from "../../components/organisms/SideBar";
 
 export default function Member() {
   return (
     <section className="overview overflow-auto">
-        <SideBar activeMenu="overview"/>
-        <OverviewContent />
+        <SideBar activeMenu="dashboard"/>
+        <DashboardContent />
     </section>
   )
 }

@@ -13,9 +13,9 @@ export default function SideBar(props: SideBarProps) {
         <div className="content pt-50 pb-30 ps-30">
             <Profile />
             <div className="menus">
-                <MenuItem title="Dashboard" icon="ic-menu-dashboard" active={activeMenu === 'dashboard'} href="/member" />
-                <MenuItem title="Tambah Logbook" icon="ic-menu-transactions" active={activeMenu === 'tambahlogbook'} href="/member/tambahlogbook" />
-                <MenuItem title="Settings" icon="ic-menu-settings" active={activeMenu === 'settings'} href="/member/edit-profile" />
+                <MenuItem title="Dashboard" icon="ic-menu-dashboard" active={activeMenu === 'dashboard'} href="/user" />
+                <MenuItem title="Tambah Logbook" icon="ic-menu-transactions" active={activeMenu === 'tambahlogbook'} href="/user/logbook/tambah" />
+                <MenuItem title="Settings" icon="ic-menu-settings" active={activeMenu === 'settings'} href="/user/profile" />
                 <MenuItem title="Log Out" icon="ic-menu-logout" href="/sign-in" />
             </div>
             <Footer />
