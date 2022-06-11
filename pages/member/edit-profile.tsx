@@ -52,25 +52,27 @@ export default function EditProfile() {
                             </div>
                         </div>
                         <div className="pt-30">
-                            <label for="name" className="form-label text-lg fw-medium color-palette-1 mb-10">Full
-                                Name</label>
+                            <label for="name" className="form-label text-lg fw-medium color-palette-1 mb-10">Nama
+                                Lengkap
+                            </label>
                             <input type="text" className="form-control rounded-pill text-lg" id="name" name="name"
-                                aria-describedby="name" placeholder="Enter your name"/>
+                                aria-describedby="name" placeholder="Masukkan nama lengkap Anda"/>
                         </div>
                         <div className="pt-30">
-                            <label for="email" className="form-label text-lg fw-medium color-palette-1 mb-10">Email
-                                Address</label>
+                            <label for="email" className="form-label text-lg fw-medium color-palette-1 mb-10">Alamat
+                                Email
+                            </label>
                             <input type="email" className="form-control rounded-pill text-lg" id="email" name="email"
-                                aria-describedby="email" placeholder="Enter your email address"/>
+                                aria-describedby="email" placeholder="Masukkan alamat email Anda"/>
                         </div>
                         <div className="pt-30">
-                            <label for="phone" className="form-label text-lg fw-medium color-palette-1 mb-10">Phone</label>
+                            <label for="phone" className="form-label text-lg fw-medium color-palette-1 mb-10">Nomor Telp</label>
                             <input type="tel" className="form-control rounded-pill text-lg" id="phone" name="phone"
-                                aria-describedby="phone" placeholder="Enter your phone number"/>
+                                aria-describedby="phone" placeholder="Masukkan nomor telepon Anda"/>
                         </div>
                         <div className="button-group d-flex flex-column pt-50">
                             <button type="submit" className="btn btn-save fw-medium text-lg text-white rounded-pill"
-                                role="button">Save My Profile</button>
+                                role="button">Ubah Profil</button>
                         </div>
                     </form>
 

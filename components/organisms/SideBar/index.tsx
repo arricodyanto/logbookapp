@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem"
 import Profile from "./Profile"
 
 interface SideBarProps {
-  activeMenu : 'overview' | 'transactions' | 'settings' ;
+  activeMenu : 'dashboard' | 'tambahlogbook' | 'settings' ;
 }
 
 export default function SideBar(props: SideBarProps) {
@@ -14,10 +14,7 @@ export default function SideBar(props: SideBarProps) {
             <Profile />
             <div className="menus">
                 <MenuItem title="Dashboard" icon="ic-menu-dashboard" active={activeMenu === 'dashboard'} href="/member" />
-                <MenuItem title="Transactions" icon="ic-menu-transactions" active={activeMenu === 'transactions'} href="/member/transactions" />
-                <MenuItem title="Messages" icon="ic-menu-messages" href="/member/" />
-                <MenuItem title="Card" icon="ic-menu-card" href="/member"/>
-                <MenuItem title="Rewards" icon="ic-menu-rewards" href="/member" />
+                <MenuItem title="Tambah Logbook" icon="ic-menu-transactions" active={activeMenu === 'tambahlogbook'} href="/member/tambahlogbook" />
                 <MenuItem title="Settings" icon="ic-menu-settings" active={activeMenu === 'settings'} href="/member/edit-profile" />
                 <MenuItem title="Log Out" icon="ic-menu-logout" href="/sign-in" />
             </div>

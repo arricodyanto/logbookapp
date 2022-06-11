@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface MenuItemProps {
   title: string;
-  icon: 'ic-menu-dashboard' | 'ic-menu-transaction' | 'ic-menu-card' | 'ic-menu-logout' | 'ic-menu-messages' | 'ic-menu-reward' | 'ic-menu-setting';
+  icon: 'ic-menu-dashboard' | 'ic-menu-transaction' | 'ic-menu-logout' | 'ic-menu-setting';
   active?: boolean;
   href: string;
 }

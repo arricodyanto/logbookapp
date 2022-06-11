@@ -1,38 +1,39 @@
 import cx from 'classnames';
+import Image from 'next/image';
 
 interface TableRowProps {
-    image: string;
     title: string;
-    category: string;
-    item: number;
-    price: number;
-    status: 'Pending' | 'Success' | 'Failed';
+    instansi: number;
+    tanggal: string;
+    deskripsi: string;
+    status: 'Belum diverifikasi' | 'Verified' | 'Failed';
 }
 
 export default function TableRow(props: TableRowProps) {
-    const { image, title, category, item, price, status } = props;
+    const { title, instansi, tanggal, deskripsi, status } = props;
     const statusClass = cx({
         'float-start icon-status' : true,
-        pending: status === 'Pending',
-        success: status === 'Success',
+        pending: status === 'Belum diverifikasi',
+        success: status === 'Verified',
         failed:  status === 'Failed',
     })
     return (
     <tr className="align-middle">
         <th scope="row">
-            <img className="float-start me-3 mb-lg-0 mb-3" src={`/img/${image}.png`} width={80} height={60} alt="thumb-1" />
             <div className="game-title-header">
                 <p className="game-title fw-medium text-start color-palette-1 m-0">
                     {title}    
                 </p>
-                <p className="text-xs fw-normal text-start color-palette-2 m-0">{category}</p>
             </div>
         </th>
         <td>
-            <p className="fw-medium color-palette-1 m-0">{item} Gold</p>
+            <p className="fw-medium color-palette-1 m-0">{instansi}</p>
         </td>
         <td>
-            <p className="fw-medium text-start color-palette-1 m-0">{price}</p>
+            <p className="fw-medium text-start color-palette-1 m-0">{tanggal}</p>
+        </td>
+        <td>
+            <p className="fw-medium text-start color-palette-1 m-0">{deskripsi}</p>
         </td>
         <td>
             <div>
@@ -41,6 +42,12 @@ export default function TableRow(props: TableRowProps) {
                     {status}
                 </p>
             </div>
+        </td>
+        <td>
+            <a className="btn btn-get-started w-100 fw-medium text-xs text-center text-white rounded-pill mb-2"
+                href="/member/edit-logbook" role="button"><Image src="/icon/ic-edit.svg" width={30} height={30} /></a>
+            <a className="btn btn-get-started w-100 fw-medium text-xs text-center text-white rounded-pill"
+                href="/member/delete-logbook" role="button"><Image src="/icon/ic-trash.svg" width={30} height={30} /></a>
         </td>
     </tr>
   )

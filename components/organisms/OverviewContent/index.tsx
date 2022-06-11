@@ -1,4 +1,3 @@
-import Category from "./Category"
 import TableRow from "./TableRow"
 
 export default function OverviewContent() {
@@ -6,24 +5,25 @@ export default function OverviewContent() {
     <main className="main-wrapper">
         <div className="ps-lg-0">
             <h2 className="text-4xl fw-bold color-palette-1 mb-30">Dashboard</h2>
-            <div className="latest-transaction">
+            <div className="latest-transaction p">
                 <p className="text-lg fw-medium color-palette-1 mb-14">Logbook Terbaru</p>
-                <div className="main-content main-content-table overflow-auto">
+                <div className="main-content main-content-table overflow-auto" >
                     <table className="table table-borderless">
                         <thead>
                             <tr className="color-palette-1">
-                                <th className="text-start" scope="col">Game</th>
-                                <th scope="col">Item</th>
-                                <th scope="col">Price</th>
+                                <th className="text-start" scope="col">Judul Kegiatan</th>
+                                <th scope="col">Instansi</th>
+                                <th scope="col">Tanggal</th>
+                                <th scope="col">Deskripsi Kegiatan</th>
                                 <th scope="col">Status</th>
+                                <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <TableRow image="overview-1" title="Mobile Legends: Bang Bang" category="Mobile" item={200} price={290000} status="Pending"/>
-                            <TableRow image="overview-2" title="Call of Duty:Modern" category="Desktop" item={550} price={740000} status="Success" />
-                            <TableRow image="overview-3" title="Clash of Clans" category="Mobile" item={100} price={120000} status="Failed" />
-                            <TableRow image="overview-4" title="The Royal Game" category="Mobile" item={225} price={200000} status="Pending" />
-
+                            <TableRow title="Observasi Kebutuhan Sistem" instansi="UPT Humas UNS" tanggal="22/03/2022" deskripsi="Observasi Kebutuhan Sistem, alur pelayananm, dan teknologi yang akan digunakan" status="Verified" />
+                            <TableRow title="Pembuatan Proses Bisnis"  instansi="UPT Humas UNS" tanggal="17/04/2022" deskripsi="a" status="Belum diverifikasi" />
+                            <TableRow title="Pembuatan Diagram Relasi" instansi="UPT Humas UNS" tanggal="21/04/2022" deskripsi="b" status="Belum diverifikasi" />
+                            <TableRow title="Penyusunan Kode Program" instansi="UPT Humas UNS" tanggal="28/04/2022" deskripsi="c" status="Belum diverifikasi" />
                         </tbody>
                     </table>
                 </div>

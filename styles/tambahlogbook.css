@@ -1,0 +1,73 @@
+.tambahlogbook {
+    background-color: #FBFCFD;
+}
+
+.tambahlogbook main.main-wrapper {
+    margin-left: 340px;
+    height: 100%;
+    margin-right: auto;
+    position: relative;
+    padding: 50px 50px 50px 0px;
+}
+
+.tambahlogbook .bg-card {
+    background-color: #FFF;
+    border-radius: 1rem;
+    max-width: 590px;
+}
+
+.tambahlogbook .bg-logbook {
+    background-color: #FFF;
+    border-radius: 1rem;
+    max-width: 1200px;
+}
+
+.tambahlogbook input[type="text"] {
+    border: 1px solid #0C145A;
+    padding: 0.75rem 1.625rem;
+    color: #0C145A;
+    max-width: 1100px;
+}
+
+.tambahlogbook input[type="date"] {
+    border: 1px solid #0C145A;
+    padding: 0.75rem 1.625rem;
+    color: #0C145A;
+    max-width: 457px;
+}
+
+.tambahlogbook textarea {
+    border: 1px solid #0C145A;
+    padding: 0.75rem 1.625rem;
+    color: #0C145A;
+    max-width: 1100px;
+}
+
+.tambahlogbook input[type="text"]:focus-within {
+    color: #0C145A;
+}
+
+.tambahlogbook input[type="date"]:focus-within {
+    color: #0C145A;
+}
+
+.tambahlogbook textarea:focus-within {
+    color: #0C145A;
+}
+
+.tambahlogbook input[type="text"]::placeholder {
+    color: #CCD0DD;
+}
+
+.tambahlogbook textarea::placeholder {
+    color: #CCD0DD;
+}
+
+.tambahlogbook .btn-save {
+    padding: 0.75rem;
+    background-color: #4D17E2;
+}
+
+.tambahlogbook .button-group {
+    max-width: 467px;
+}
