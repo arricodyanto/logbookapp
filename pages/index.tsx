@@ -17,10 +17,6 @@ const Home: NextPage = () => {
  return (
     <> 
     <Navbar/>
-    <MainBanner/>
-    <TransactionStep/>
-    <FeaturedGame />
-    <Reached />
     <Story />
     <Footer />
 
